@@ -11,12 +11,12 @@ function main(nodes) {
         const endRange = node.text.length - 1 + increment;
 
         if ("style" in node) {
-            const style = {style: node.style, range: `${increment}-${endRange}`}
-            styles.push(style)
+            const style = {style: node.style, range: `${increment}-${endRange}`};
+            styles.push(style);
         }
 
-        increment += node.text.length 
-        wholeString += node.text
+        increment += node.text.length;
+        wholeString += node.text;
     }
 
     return {
